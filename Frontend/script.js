@@ -15,7 +15,7 @@ document.getElementById('submit-slot').addEventListener('click', () => {
         url: "http://example.com/details" // Replace with the actual URL if needed
     };
 
-    fetch('http://localhost:3000/update-slot', {
+    fetch('https:/notificationsoptideliverbackend.vercel.app/update-slot', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
