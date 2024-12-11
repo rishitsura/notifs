@@ -9,6 +9,11 @@
     ],
     "routes": [
       {
+        "src": "/api/(.*)",
+        "dest": "https://notificationsoptideliverbackend.vercel.app/$1",
+        "methods": ["GET", "POST"]
+      },
+      {
         "src": "/(.*)",
         "dest": "/$1"
       },
@@ -17,4 +22,5 @@
         "dest": "/index.html"
       }
     ]
-}
+  }
+  
