@@ -24,7 +24,7 @@ app.post('/update-slot', (req, res) => {
     }
 
     const toNotify = recipient === 'John Doe' ? person2Number : person1Number;
-    const messageBody = `${recipient} has successfully updated their time slot to ${newSlot.replace('-', ' to ')} on ${date}. For more details, visit: ${url}`;
+    const messageBody = `${recipient} has successfully updated their time slot to ${newSlot.replace('-', ' to ')} on ${date}.`;
 
     client.messages
         .create({
