@@ -54,3 +54,7 @@ button:hover {
     font-weight: bold;
     color: green;
 }
+
+#date{
+    margin-bottom: 10px;
+}
